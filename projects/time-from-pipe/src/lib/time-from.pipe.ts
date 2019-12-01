@@ -19,6 +19,8 @@ export class TimeFromPipe implements PipeTransform
   transform( value: any, isOn?: boolean ): string
   {
 
+    value = +new Date(value);
+
     if (isOn) {
       return new DatePipe(this.locale).transform(value,'medium');
     }

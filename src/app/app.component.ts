@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'time-from-workspace';
+
+  stringTime = 'Sun, 01 Dec 2019 17:23:12 GMT'
   
   currentTime = new Date;
 

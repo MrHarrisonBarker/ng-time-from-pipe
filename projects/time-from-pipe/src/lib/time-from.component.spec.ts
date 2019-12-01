@@ -6,7 +6,7 @@ import {
   TestBed,
   async
 } from '@angular/core/testing';
-import { TimeFromPipe } from 'time-from-pipe';
+import { TimeFromPipe } from './time-from.pipe';
 
 describe('TimeFromComponent', () => {
   let component: TimeFromComponent;
