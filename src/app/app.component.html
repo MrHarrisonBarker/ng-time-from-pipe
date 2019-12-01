@@ -1,7 +1,7 @@
-<p (mouseenter)="hover = true" (mouseleave)="hover = false">{{currentTime | timeFrom}}</p>
-<p (mouseenter)="hover = true" (mouseleave)="hover = false">{{seconds | timeFrom}}</p>
-<p (mouseenter)="hover = true" (mouseleave)="hover = false">{{minutes | timeFrom}}</p>
-<p (mouseenter)="hover = true" (mouseleave)="hover = false">{{hours | timeFrom}}</p>
-<p (mouseenter)="hover = true" (mouseleave)="hover = false">{{days | timeFrom}}</p>
+<time-from [value]="currentTime"></time-from>
+<time-from [value]="seconds"></time-from>
+<time-from [value]="minutes"></time-from>
+<time-from [value]="hours"></time-from>
+<time-from [value]="days"></time-from>
 
 <p>{{currentTime | timeFrom }}</p>

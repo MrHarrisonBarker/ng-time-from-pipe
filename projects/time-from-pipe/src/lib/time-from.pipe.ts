@@ -1,4 +1,5 @@
-import {ChangeDetectorRef, Inject, LOCALE_ID, NgZone, Pipe, PipeTransform} from '@angular/core';
+import { ChangeDetectorRef, Inject, LOCALE_ID, NgZone, Pipe, PipeTransform } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Pipe( {
   name: 'timeFrom',
@@ -7,15 +8,20 @@ import {ChangeDetectorRef, Inject, LOCALE_ID, NgZone, Pipe, PipeTransform} from 
 export class TimeFromPipe implements PipeTransform
 {
 
-  displayText;
-  previousText = '-1';
+  private displayText;
+  private previousText = '-1';
   private currentTimer: number | null;
 
-  constructor(@Inject(LOCALE_ID) private locale: string, private cdRef: ChangeDetectorRef, private ngZone: NgZone) {
+  constructor(@Inject(LOCALE_ID) private locale: string, private cdRef: ChangeDetectorRef, private ngZone: NgZone) 
+  {
   }
 
-  transform( value: any ): string
+  transform( value: any, isOn?: boolean ): string
   {
+
+    if (isOn) {
+      return new DatePipe(this.locale).transform(value,'medium');
+    }
 
     if (this.previousText != this.formatText( value )) {
 
@@ -26,8 +32,6 @@ export class TimeFromPipe implements PipeTransform
       this.timer(value);
 
       this.displayText = this.formatText( value );
-
-      // console.log('main hit');
 
     } else {
       this.timer(value);
@@ -84,7 +88,7 @@ export class TimeFromPipe implements PipeTransform
     }
   }
 
-  formatText(value: number) {
+  private formatText(value: number) {
     let timeFrom: number = this.timeDifference(value);
 
     if ( timeFrom <= 60 )
