@@ -1,24 +1,46 @@
-# TimeFromPipe
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.14.
+# ng-time-from-pipe
 
-## Code scaffolding
+<p>
+	<a href="https://www.npmjs.com/package/ng-time-from-pipe"  target="_blank">
+	<img alt="Version"  src="https://img.shields.io/npm/v/ng-time-from-pipe.svg">
+	</a>
+	<a href="#"  target="_blank">
+	<img alt="License: ISC"  src="https://img.shields.io/badge/License-ISC-yellow.svg" />
+	</a>
+</p>
 
-Run `ng generate component component-name --project time-from-pipe` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project time-from-pipe`.
-> Note: Don't forget to add `--project time-from-pipe` or else it will be added to the default project in your `angular.json` file. 
+A simple pipe to display the time passed from the input date. Also includes a `<time-from>` component with hover switching effect (switch between time from and raw date format).
 
-## Build
+### [Github](https://github.com/MrHarrisonBarker/ng-time-from-pipe)  
 
-Run `ng build time-from-pipe` to build the project. The build artifacts will be stored in the `dist/` directory.
+##  Install
+```sh
 
-## Publishing
+npm install ng-time-from-pipe
 
-After building your library with `ng build time-from-pipe`, go to the dist folder `cd dist/time-from-pipe` and run `npm publish`.
+```
+##  Build
+```sh
 
-## Running unit tests
+ng build time-from-pipe
 
-Run `ng test time-from-pipe` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+##  Test
+```sh
 
-## Further help
+ng test time-from-pipe
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+
+##  Author
+
+  
+
+👤 **Harrisonn Barker**
+
+  
+
+* Website: harrisonbarker.co.uk
+
+* Github: [@MrHarrisonBarker](https://github.com/MrHarrisonBarker)
