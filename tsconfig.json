@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "time-from-pipe": [
+        "dist/time-from-pipe"
+      ],
+      "time-from-pipe/*": [
+        "dist/time-from-pipe/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
