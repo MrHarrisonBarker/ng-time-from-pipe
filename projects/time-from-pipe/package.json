@@ -1,6 +1,7 @@
 {
   "name": "ng-time-from-pipe",
-  "version": "0.0.42",
+  "version": "0.0.44",
+  "keywords":["Angular","Angular2","TimeFrom","timeago","pipe"],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
@@ -9,5 +10,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/MrHarrisonBarker/ng-time-from-pipe.git"
+  },
+  "bugs": {
+    "email": "mail@harrisonbarker.co.uk",
+    "url": "https://github.com/MrHarrisonBarker/ng-time-from-pipe/issues"
   }
 }

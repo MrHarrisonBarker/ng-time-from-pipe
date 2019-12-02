@@ -6,6 +6,6 @@ import { TimeFromComponent } from './time-from.component';
 
 @NgModule({
   declarations: [TimeFromPipe, TimeFromComponent],
-  exports: [TimeFromPipe]
+  exports: [TimeFromPipe, TimeFromComponent]
 })
 export class TimeFromPipeModule { }
