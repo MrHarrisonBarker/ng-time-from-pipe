@@ -1,46 +1,47 @@
-
 # ng-time-from-pipe
 
-<p>
-	<a href="https://www.npmjs.com/package/ng-time-from-pipe"  target="_blank">
-	<img alt="Version"  src="https://img.shields.io/npm/v/ng-time-from-pipe.svg">
-	</a>
-	<a href="#"  target="_blank">
-	<img alt="License: ISC"  src="https://img.shields.io/badge/License-ISC-yellow.svg" />
-	</a>
-</p>
+![npm](https://img.shields.io/npm/dt/ng-time-from-pipe) ![npm](https://img.shields.io/npm/v/ng-time-from-pipe) ![GitHub issues](https://img.shields.io/github/issues/mrharrisonbarker/ng-time-from-pipe) ![NPM](https://img.shields.io/npm/l/ng-time-from-pipe) [![Build Status](https://travis-ci.com/MrHarrisonBarker/ng-time-from-pipe.svg?branch=master)](https://travis-ci.com/MrHarrisonBarker/ng-time-from-pipe) 
 
 A simple pipe to display the time passed from the input date. Also includes a `<time-from>` component with hover switching effect (switch between time from and raw date format).
 
-### [Github](https://github.com/MrHarrisonBarker/ng-time-from-pipe)  
+Updates as time passes.
 
-##  Install
-```sh
+### Install
 
-npm install ng-time-from-pipe
+``` npm install ng-time-from-pipe ```
 
-```
-##  Build
-```sh
+### Usage
 
-ng build time-from-pipe
+You can import in the @NgModule.
 
-```
-##  Test
-```sh
-
-ng test time-from-pipe
-
+```typescript
+import { TimeFromPipeModule } from "ng-time-from-pipe";
 ```
 
-##  Author
+then add to imports array. 
 
-  
+```typescript
+@NgModule( { 
+  declarations: [ ... ],
+  imports: [ ..., TimeFromPipeModule, ... ]
+})
+```
 
-👤 **Harrisonn Barker**
+you can choose between the time from pipe and the time from component (time from component has hover effect).
 
-  
+```html
+<time-from [value]="date"></time-from>
+```
 
-* Website: harrisonbarker.co.uk
+| Attribute | Type                       |
+| --------- | -------------------------- |
+| value     | Input date toe be formated |
 
-* Github: [@MrHarrisonBarker](https://github.com/MrHarrisonBarker)
+```html
+<span>{{ date | timeFrom  }}</span>
+```
+
+| Attribute | Type                           |
+| --------- | ------------------------------ |
+| value     | Any. Date to be formated       |
+| isOn      | Boolean. Turns on and off pipe |

@@ -1,27 +1,47 @@
-# TimeFromWorkspace
+# ng-time-from-pipe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+![npm](https://img.shields.io/npm/dt/ng-time-from-pipe) ![npm](https://img.shields.io/npm/v/ng-time-from-pipe) ![GitHub issues](https://img.shields.io/github/issues/mrharrisonbarker/ng-time-from-pipe) ![NPM](https://img.shields.io/npm/l/ng-time-from-pipe) [![Build Status](https://travis-ci.com/MrHarrisonBarker/ng-time-from-pipe.svg?branch=master)](https://travis-ci.com/MrHarrisonBarker/ng-time-from-pipe) 
 
-## Development server
+A simple pipe to display the time passed from the input date. Also includes a `<time-from>` component with hover switching effect (switch between time from and raw date format).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Updates as time passes.
 
-## Code scaffolding
+### Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+``` npm install ng-time-from-pipe ```
 
-## Build
+### Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+You can import in the @NgModule.
 
-## Running unit tests
+```typescript
+import { TimeFromPipeModule } from "ng-time-from-pipe";
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+then add to imports array. 
 
-## Running end-to-end tests
+```typescript
+@NgModule( { 
+  declarations: [ ... ],
+  imports: [ ..., TimeFromPipeModule, ... ]
+})
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+you can choose between the time from pipe and the time from component (time from component has hover effect).
 
-## Further help
+```html
+<time-from [value]="date"></time-from>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+| Attribute | Type                       |
+| --------- | -------------------------- |
+| value     | Input date toe be formated |
+
+```html
+<span>{{ date | timeFrom  }}</span>
+```
+
+| Attribute | Type                           |
+| --------- | ------------------------------ |
+| value     | Any. Date to be formated       |
+| isOn      | Boolean. Turns on and off pipe |
