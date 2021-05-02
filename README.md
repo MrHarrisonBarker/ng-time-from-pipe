@@ -1,6 +1,10 @@
 # ng-time-from-pipe
 
-![npm](https://img.shields.io/npm/dt/ng-time-from-pipe) ![npm](https://img.shields.io/npm/v/ng-time-from-pipe) ![GitHub issues](https://img.shields.io/github/issues/mrharrisonbarker/ng-time-from-pipe) ![NPM](https://img.shields.io/npm/l/ng-time-from-pipe) [![Build Status](https://travis-ci.com/MrHarrisonBarker/ng-time-from-pipe.svg?branch=master)](https://travis-ci.com/MrHarrisonBarker/ng-time-from-pipe) 
+[![npm](https://img.shields.io/npm/dt/ng-time-from-pipe)](https://www.npmjs.com/package/ng-time-from-pipe)
+[![npm](https://img.shields.io/npm/v/ng-time-from-pipe)](https://www.npmjs.com/package/ng-time-from-pipe)
+[![GitHub issues](https://img.shields.io/github/issues/mrharrisonbarker/ng-time-from-pipe)](https://github.com/MrHarrisonBarker/ng-time-from-pipe/issues)
+[![NPM](https://img.shields.io/npm/l/ng-time-from-pipe)](https://www.npmjs.com/package/ng-time-from-pipe)
+[![Build&Publish](https://github.com/MrHarrisonBarker/ng-time-from-pipe/actions/workflows/main.yml/badge.svg)](https://github.com/MrHarrisonBarker/ng-time-from-pipe/actions/workflows/main.yml)
 
 A simple pipe to display the time passed from the input date. Also includes a `<time-from>` component with hover switching effect (switch between time from and raw date format).
 
