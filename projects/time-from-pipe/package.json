@@ -1,6 +1,6 @@
 {
   "name": "ng-time-from-pipe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple pipe to display the time passed from the input date in real time. Also includes a <time-from> component with hover switching effect (switch between time from and raw date format).",
   "keywords": [
     "Angular",
