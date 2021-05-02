@@ -9,16 +9,14 @@
     "timeago",
     "pipe"
   ],
-  "peerDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14"
-  },
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/MrHarrisonBarker/ng-time-from-pipe.git"
   },
   "dependencies": {
+    "@angular/common": "^11.2.12",
+    "@angular/core": "^11.2.12",
     "tslib": "^2.0.0"
   },
   "bugs": {
