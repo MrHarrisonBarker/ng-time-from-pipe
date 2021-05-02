@@ -24,7 +24,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - run: cd ./projects/time-from-pipe/
       - run: npm ci
-      - run: npm publish
+      - run: npm publish ng-time-from-pipe@${{ github.event.release.tag_name }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
