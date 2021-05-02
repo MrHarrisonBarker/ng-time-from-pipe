@@ -1,7 +1,14 @@
 {
   "name": "ng-time-from-pipe",
-  "version": "0.0.45",
-  "keywords":["Angular","Angular2","TimeFrom","timeago","pipe"],
+  "version": "1.0.1",
+  "description": "A simple pipe to display the time passed from the input date in real time. Also includes a <time-from> component with hover switching effect (switch between time from and raw date format).",
+  "keywords": [
+    "Angular",
+    "Angular2",
+    "TimeFrom",
+    "timeago",
+    "pipe"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
