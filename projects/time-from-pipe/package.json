@@ -18,6 +18,9 @@
     "type": "git",
     "url": "https://github.com/MrHarrisonBarker/ng-time-from-pipe.git"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "bugs": {
     "email": "mail@harrisonbarker.co.uk",
     "url": "https://github.com/MrHarrisonBarker/ng-time-from-pipe/issues"
